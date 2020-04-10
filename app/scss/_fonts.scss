@@ -1,0 +1,28 @@
+
+@font-face {
+    font-family: "helvetica-roman", sans-serif;
+    src: url("../fonts/helveticaneuecyr-roman.eot");
+    src: local("☺"), url("../fonts/helveticaneuecyr-roman.woff") format("woff"),
+        url("../fonts/helveticaneuecyr-roman.ttf") format("truetype"),
+        url("../fonts/helveticaneuecyr-roman.svg") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "helvetica-light", sans-serif;
+    src: url("../fonts/helveticaneuecyr-light.eot");
+    src: local("☺"), url("../fonts/helveticaneuecyr-light.woff") format("woff"),
+        url("../fonts/helveticaneuecyr-light.ttf") format("truetype"),
+        url("../fonts/helveticaneuecyr-light.svg") format("svg");
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: "helvetica-bold", sans-serif;
+    src: url("../fonts/HelveticaBold.eot");
+    src: local("☺"), url("../fonts/HelveticaBold.woff") format("woff"),
+        url("../fonts/HelveticaBold.ttf") format("truetype"), 
+        url("../fonts/HelveticaBold.svg") format("svg");
+    font-weight: 700;
+    font-style: normal;
+}
