@@ -54,6 +54,16 @@
             &:hover::before {
                 animation: animate 0.3s linear forwards;
             }
+            &.active {
+                color: #fff;
+                z-index: 2;
+                &::before {
+                    top: 0;
+                    left: 0;
+                    height: 100%;
+                    z-index: -1;
+                }
+            }
             @keyframes animate {
                 0% {
                     top: calc(50% - 2px);
@@ -129,7 +139,7 @@
                 box-shadow: 0px 5px 0px 0px #bcc1c6;
                 position: relative;
                 top: 0;
-                transition: all .3s;
+                transition: all 0.3s;
                 &:hover {
                     top: 4px;
                     box-shadow: 0px 1px 0px 0px #bcc1c6;
@@ -139,14 +149,14 @@
                 color: #01d6ec;
                 position: relative;
                 padding-left: 30px;
-                transition: all .3s;
+                transition: all 0.3s;
                 &::before {
                     content: "\f144";
                     position: absolute;
                     left: 0;
                     top: 0;
                     font-family: "FontAwesome", "Font Awesome 5 Free";
-                    transition: transform .5s;
+                    transition: transform 0.5s;
                 }
                 &::after {
                     content: "";
@@ -156,16 +166,16 @@
                     padding: 12px;
                     border: 2px solid #01d6ec;
                     border-radius: 50%;
-                    transition: all .5s;
+                    transition: all 0.5s;
                 }
-                &:hover.content__btn-two::after{
+                &:hover.content__btn-two::after {
                     border: 2px solid #fff;
                     transform: rotateY(180deg);
                 }
-                &:hover.content__btn-two::before{
+                &:hover.content__btn-two::before {
                     transform: rotateX(180deg);
                 }
-                &:hover{
+                &:hover {
                     color: #fff;
                 }
             }
@@ -374,7 +384,7 @@
         box-shadow: 0px 5px 0px 0px #bcc1c6;
         position: relative;
         top: 0;
-        transition: all .3s;
+        transition: all 0.3s;
         &:hover {
             top: 4px;
             box-shadow: 0px 1px 0px 0px #bcc1c6;
@@ -465,6 +475,16 @@
             background-color: #fff;
             z-index: 1;
         }
+        &.active {
+            background-color: #42526e;
+            .work__item-title {
+                color: #fff;
+            }
+            .work__item-img::before {
+                background-color: #fff;
+                z-index: 1;
+            }
+        }
     }
     .item {
         margin: 255px 0px 0px 95px;
@@ -501,12 +521,12 @@
     .work__client-box {
         display: flex;
         padding: 0px 80px 90px;
-        &-info {
+        .work__client-info {
             margin: 50px 115px 0px 0px;
         }
         .item-link {
             padding-right: 40px;
-            
+
             &::before {
                 content: "";
                 position: absolute;
@@ -516,10 +536,10 @@
                 height: 29px;
                 background-image: url(../images/work/work-icon.png);
                 background-repeat: no-repeat;
-                transition: all .5s;
+                transition: all 0.5s;
             }
-            &:hover.item-link::before{
-                transform: rotateY(360deg); 
+            &:hover.item-link::before {
+                transform: rotateY(360deg);
             }
         }
     }
@@ -686,7 +706,7 @@
         position: relative;
         box-shadow: 0px 5px 0px 0px #bcc1c6;
         top: 0;
-        transition: all .3s;
+        transition: all 0.3s;
         &:hover {
             top: 4px;
             box-shadow: 0px 1px 0px 0px #bcc1c6;
@@ -782,7 +802,7 @@
             box-shadow: 0px 5px 0px 0px #bcc1c6;
             position: relative;
             top: 0;
-            transition: all .3s;
+            transition: all 0.3s;
             &:hover {
                 top: 4px;
                 box-shadow: 0px 1px 0px 0px #bcc1c6;
@@ -848,6 +868,9 @@
                 margin-left: 10px;
             }
             &:hover {
+                transform: scale(1.5);
+            }
+            &.active{
                 transform: scale(1.5);
             }
         }
